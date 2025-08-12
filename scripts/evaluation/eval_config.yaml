@@ -1,0 +1,47 @@
+# ------------------------------------------------Environment Settings------------------------------------------------#
+# Directory paths for data and outputs
+data_dir: "/share/project/weiyifan/ReSearch/data/2wikimultihopqa/"
+save_dir: "/share/project/weiyifan/ReSearch/data/new_eval_results/"
+
+# Seed for reproducibility
+seed: 2024
+
+# Whether save intermediate data
+save_intermediate_data: True
+save_note: 'experiment'
+
+# -------------------------------------------------Retrieval Settings------------------------------------------------#
+# If set the remote url, the retriever will be a remote retriever and ignore following settings
+use_remote_retriever: True
+remote_retriever_url: "http://172.0.0.1:80"
+
+instruction: ~                    # instruction for retrieval model
+retrieval_topk: 5                 # number of retrieved documents
+retrieval_batch_size: 256         # batch size for retrieval
+retrieval_use_fp16: True          # whether to use fp16 for retrieval model
+retrieval_query_max_length: 128   # max length of the query
+save_retrieval_cache: False       # whether to save the retrieval cache
+use_retrieval_cache: False        # whether to use the retrieval cache
+retrieval_cache_path: ~           # path to the retrieval cache
+retrieval_pooling_method: ~       # set automatically if not provided
+
+# -------------------------------------------------Generator Settings------------------------------------------------#
+framework: sgl_remote                   # inference frame work of LLM, supporting: 'hf','vllm','fschat'
+sgl_remote_url: "http://0.0.0.0:83"
+sandbox_url: "http://172.0.0.1:81"
+generator_model: "/share/project/models/Qwen2.5-7B-Instruct" # name or path of the generator model, for loading tokenizer
+generator_max_input_len: 8192           # max length of the input
+generation_params:
+  do_sample: False
+  max_tokens: 8192
+
+# -------------------------------------------------Evaluation Settings------------------------------------------------#
+# Metrics to evaluate the result
+metrics: [ 'em','f1','acc','precision','recall']
+# Specify setting for metric, will be called within certain metrics
+metric_setting:
+  retrieval_recall_topk: 5
+save_metric_score: True #　whether to save the metric score into txt file
+
+
+
