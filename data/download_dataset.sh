@@ -33,3 +33,18 @@ wget https://hf-mirror.com/datasets/RUC-NLPIR/FlashRAG_datasets/resolve/main/mus
 # 创建目录并下载 bamboogle 数据集
 mkdir -p bamboogle
 wget https://hf-mirror.com/datasets/RUC-NLPIR/FlashRAG_datasets/resolve/main/bamboogle/test.jsonl -O bamboogle/test.jsonl
+
+mkdir -p ikea
+wget https://huggingface.co/datasets/hzy/ikea_nq_easy/resolve/main/ikea_nq_easy.jsonl -O ikea/ikea_nq_easy.jsonl
+
+# 创建目录并下载 DAPO-Math-17k 数据集
+# 注意：该数据集的链接需要你手动指定具体文件
+mkdir -p DAPO-Math-17k
+wget https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k/resolve/main/train.jsonl -O DAPO-Math-17k/train.jsonl
+wget https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k/resolve/main/dev.jsonl -O DAPO-Math-17k/dev.jsonl
+wget https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k/resolve/main/test.jsonl -O DAPO-Math-17k/test.jsonl
+
+# 创建目录并下载 RLVR-IFeval 数据集
+# 注意：该数据集的链接需要你手动指定具体文件
+mkdir -p RLVR-IFeval
+wget https://huggingface.co/datasets/allenai/RLVR-IFeval/resolve/main/eval.jsonl -O RLVR-IFeval/eval.jsonl
