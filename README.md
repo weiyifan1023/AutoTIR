@@ -175,7 +175,7 @@ python run_eval.py \
 
 ## 🤝 Acknowledge
 
-This training implementation is based on [verl](https://github.com/volcengine/verl) and the evaluation is based on [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG). The serving of retriever is based on [FastAPI](https://github.com/fastapi/fastapi). The model serving is based on [SGLang](https://docs.sglang.ai/). **AutoTIR**,models are trained based on [Qwen2.5](https://qwenlm.github.io/blog/qwen2.5/) and are modifications of the code from [ReSearch](https://github.com/Agent-RL/ReCall/tree/re-search). We sincerely appreciate their contributions to the open-source community.
+This training implementation is based on [verl](https://github.com/volcengine/verl) and the evaluation is based on [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG). The serving of retriever is based on [FastAPI](https://github.com/fastapi/fastapi). The model serving is based on [SGLang](https://docs.sglang.ai/). **AutoTIR**,models are trained based on [Qwen2.5](https://qwenlm.github.io/blog/qwen2.5/) and are modifications of the code from [ReSearch](https://github.com/Agent-RL/ReCall/tree/re-search) and [Search-R1](https://github.com/PeterGriffinJin/Search-R1). We sincerely appreciate their contributions to the open-source community.
 
 ## 📚 Citation
 
