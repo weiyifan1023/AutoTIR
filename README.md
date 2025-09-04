@@ -16,7 +16,7 @@ Inspired by the human ability to adaptively select tools, we introduce **AutoTIR
 
 ## 📰 News
 
-- **[2025-08-12]** 🤗 We release our trained models on [Hugging Face](https://huggingface.co/Weiyifan/AutoTIR-Qwen2.5-7B-Instruct/tree/main), please check it out! 
+- **[2025-08-12]** 🤗 We release our trained [models](https://huggingface.co/Weiyifan/AutoTIR-Qwen2.5-7B-Instruct/tree/main) on Hugging Face, please check it out! 
 - **[2025-07-28]** 🎉 We release the paper, update the code and open-source the models.
   - 📝 The **paper is released** on arXiv, more details and evaluation results can be found in our [paper](https://arxiv.org/pdf/2507.21836).
   - 🛠️ The **repository is updated** with the new implementation, especially the rollout with multiple action strategies during RL training. This version of implementation is based on the latest release of verl.
